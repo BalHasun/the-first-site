@@ -1,6 +1,6 @@
 :root {
   --main-trans: 0.4s;
-  --main-color: #AD8B73;
+  --main-color: #d33a80;
   --card-width: 200px;
   --card-height: 300px;
   --card-transition-duration: 800ms;
@@ -21,14 +21,14 @@ html {
   justify-content: space-between;
   height: 80px;
   align-items: center;
+  border-bottom: 1px solid #eeeeee;
   top: 0px;
   z-index: 999;
-  background-color: rgb(223, 216, 200, 0.3);
+  background-color: #eeeeee;
 }
 .header_section .logo img {
   padding: 5px;
   max-width: 70px;
-  margin-left: 100%;
 }
 .header_section .main-nav {
   display: flex;
@@ -208,13 +208,14 @@ html {
 }
 .header_section .icon .ul-main-icon li:hover i {
   color: var(--main-color);
-  transform: scale(1.2);
+  transform: rotatey(1turn) scale(1.2);
 }
 .header_section .icon .ul-main-icon li:hover > a:after {
   content: "";
   bottom: -7px;
   /* width: 100%; */
   position: absolute;
+  border-bottom: 1px solid var(--main-color);
   left: 0px;
   animation: shake var(--main-trans);
   animation-fill-mode: both;
@@ -334,7 +335,7 @@ html {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: #000;
   z-index: 1;
   opacity: 0.8;
 }
@@ -560,13 +561,9 @@ html {
 }
 .image-section .image-items {
   max-height: 530px;
-  width: 90%;
   overflow: hidden;
   object-position: center;
-  margin-bottom: 3%;
-  margin-top: 4%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-bottom: 15px;
 }
 /* end image section */
 /* start footer section */
@@ -574,7 +571,8 @@ footer {
   position: relative;
   display: flex;
   align-items: center;
-  background-color: rgb(223, 216, 200);
+  border-top: 1px solid black;
+  background-color: #eeeeee;
   text-align: center;
 }
 footer .headinga h1 {
@@ -584,6 +582,7 @@ footer .headinga h1 {
   border-bottom: var(--main-color) solid 1px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 footer .headinga span {
   display: block;
@@ -600,7 +599,6 @@ footer .location_icon {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 5px;
-  margin-bottom: 0px;
 }
 footer ul.location_icon li {
   padding: 10px;
@@ -614,7 +612,7 @@ footer ul.location_icon li i {
   font-size: 35px;
 }
 footer ul.location_icon li:hover > a {
-  transform: scale(1.2);
+  transform: rotatey(1turn);
   color: var(--main-color);
 }
 /* end footer section */
@@ -638,14 +636,11 @@ footer ul.location_icon li:hover > a {
   justify-content: center;
   border-radius: 6px;
   font-size: 12px;
-  width: 40px;
-  height: 40px;
   cursor: pointer;
   transition: 0.3s, visibility 0.5s;
   padding: 4px 12px;
 }
-.back-to-top:hover {
+/* .back-to-top:hover {
   opacity: 60%;
-}
+} */
 /* end back to top */
-

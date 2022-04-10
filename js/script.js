@@ -1,11 +1,9 @@
-// product page new item
-// var newitem = $("ul.new-item").children().html();
-// $("li.product-incremant").click(function () {
-// 	$(this).before('<li class="product-item">' + newitem + '</>');
-// 	console.log(newitem);
+// product page
+var newitem = $("ul.new-item ").children().html();
+$("li.product-incremant").click(function () {
+	$(this).before('<li class="product-item new-item">' + newitem + '</>');
 
-// });
-
+});
 
 // start slider image
 console.clear();
@@ -265,7 +263,8 @@ waitForImages();
 // end slider image
 
 // start back tp top
-const showOnPx = 100;
+//when page down to ..px
+const showOnPx = 300;
 const backToTopButton = document.querySelector(".back-to-top")
 
 const scrollContainer = () => {
@@ -287,7 +286,6 @@ const goToTop = () => {
 backToTopButton.addEventListener("click", goToTop)
 // end back to top
 
-
 // navbar translate from left to right
 $(function () {
 	$(".span-mobile-nav").click(function () {
@@ -308,5 +306,3 @@ $(function () {
 		$(this).next().slideToggle();
 	});
 });
-
-

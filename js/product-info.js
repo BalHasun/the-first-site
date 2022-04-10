@@ -58,13 +58,15 @@ function imageZoom(imgID, resultID) {
 
 $(function () {
 
-
   // chang zoomer images
   $("li.small-image").click(function () {
     var source = $(this).children().attr("src");
     $("#myimage").attr("src", source);
     $("#myresult").css("backgroundImage", "url(" + source + ")")
+
   });
+
+
 
   // when a click occurs 
   $('.add-to-basket').click(function () {
@@ -77,9 +79,6 @@ $(function () {
       $(".add-success-text").delay(3000).animate({
         top: "150%",
       },300);});
+
   });
-
-
-  
-
 })

@@ -1,4 +1,4 @@
-:root { --main-trans: 0.4s; --main-color: #AD8B73;}
+:root { --main-trans: 0.4s; --main-color: #d33a80;}
 .product-section .product-container { position: relative; display: flex; }
 .product-section .product-container .folio-list { border-right: 2px solid var(--main-color); padding: 0px 10px; }
 .product-section .product-container .folio-list .piclist li:not(:last-child) { margin: 0px 0px 25px;}
@@ -30,8 +30,7 @@
 .product-description .size-mark { display: flex; width: fit-content; margin: 15px 0px;}
 .product-description .description-size .size{     border: 1px solid #d4d4d4; margin-right: 10px; width: 30px; padding: 5px; text-align: center;}
 .product-description .add { width: 50%;}
-.product-description .add .add-to-basket { cursor: pointer; font-weight: bold; letter-spacing: 1.5px; color: #d4d4d4; font-size: 20px; width: 100%; border: none; border-radius: 10px; padding: 0px; position: relative; overflow: hidden; height: 45px;}
+.product-description .add .add-to-basket { font-weight: bold; letter-spacing: 1.5px; color: #d4d4d4; font-size: 20px; width: 100%; border: none; border-radius: 10px; padding: 0px; position: relative; overflow: hidden; height: 45px;}
 .product-description .add .add-to-basket .add-text { background-color: var(--main-color); height: 100%; display: flex; align-items: center; justify-content: center;}
-.product-description .add .add-to-basket p{ margin-bottom: 0;}
 .product-description .add .add-to-basket .add-success-text {  display: flex; align-items: center; justify-content: center; background-color:#46af62; height: 100%; width: 100%; position: absolute; top: 150%; left: 50%; transform: translate(-50%, -50%);}
 .product-description .description-info { padding: 20px 0px; text-align: justify; line-height: 1.6; color: #323030db;}
