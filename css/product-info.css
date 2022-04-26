@@ -1,5 +1,5 @@
 :root { --main-trans: 0.4s; --main-color: #d33a80;}
-.product-section .product-container { position: relative; display: flex; }
+.product-section .product-container { position: relative; z-index: 2; display: flex; padding: 20px 0px; background-color: white;}
 .product-section .product-container .folio-list { border-right: 2px solid var(--main-color); padding: 0px 10px; }
 .product-section .product-container .folio-list .piclist li:not(:last-child) { margin: 0px 0px 25px;}
 .product-section .product-container .folio-list .piclist li img { width: 90px; height: 130px;}

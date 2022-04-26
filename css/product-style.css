@@ -7,9 +7,11 @@
   --card-transition-easing: ease;
 }
 .product-container {
+  position: relative;
   text-align: center;
-  width: 90%;
-  padding: 10px 0px;
+  padding: 10px;
+  background-color: white;
+  z-index: 2;
   margin: auto;
 }
 .product-container .main-component {
@@ -77,6 +79,7 @@
 }
 .giyim-product li .product-item-action {
   display: flex;
+  justify-content: space-between;
   background-color: white;
   position: absolute;
   padding: 20px 0px;
@@ -101,11 +104,12 @@
   transition: 0.3s, visibility 0.5s;
   padding: 20px 20px;
   display: flex;
+  margin: 0px 10px;
 }
 .giyim-product li .product-item-action .quick-action {
   background: rgb(195 132 48 / 82%);
   border: 1px solid #c79b63;
-  margin: 0px 10px;
+
 }
 .giyim-product li .product-item-action .choose-action {
   background: rgb(38 41 50);
